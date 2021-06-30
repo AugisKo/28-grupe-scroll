@@ -13,7 +13,7 @@ header.sticky {
   left: 0;
   right: 0;
   animation-name: slideIn;
-  animation-duration: 2s;
+  animation-duration: 0.4s;
 }
 header.sticky + * {
   margin-top: 60px;
@@ -32,7 +32,7 @@ header.not-sticky {
   left: 0;
   right: 0;
   animation-name: slideOut;
-  animation-duration: 2s;
+  animation-duration: 0.4s;
 }
 header.not-sticky + * {
   margin-top: 60px;
