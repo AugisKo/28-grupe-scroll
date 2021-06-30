@@ -7,7 +7,6 @@ header {
   line-height: 30px;
   font-size: 20px;
 }
-
 header.sticky {
   position: fixed;
   top: 0;
@@ -16,21 +15,17 @@ header.sticky {
   animation-name: slideIn;
   animation-duration: 0.4s;
 }
-
-header.sticky+* {
+header.sticky + * {
   margin-top: 60px;
 }
-
 @keyframes slideIn {
   0% {
     transform: translateY(-100%);
   }
-
   100% {
     transform: translateY(0);
   }
 }
-
 header.not-sticky {
   position: fixed;
   top: 0;
@@ -39,16 +34,13 @@ header.not-sticky {
   animation-name: slideOut;
   animation-duration: 0.4s;
 }
-
-header.not-sticky+* {
+header.not-sticky + * {
   margin-top: 60px;
 }
-
 @keyframes slideOut {
   0% {
     transform: translateY(0);
   }
-
   100% {
     transform: translateY(-100%);
   }
@@ -67,8 +59,7 @@ article {
   gap: 30px;
   font-size: 20px;
 }
-
-article>footer {
+article > footer {
   font-style: italic;
 }
 
@@ -89,7 +80,6 @@ article>footer {
   bottom: 50px;
   right: 50px;
 }
-
 .back-to-top.hide {
   display: none;
 }
@@ -98,7 +88,6 @@ form {
   display: inline-block;
   width: 100%;
 }
-
 textarea {
   display: inline-block;
   width: 100%;
