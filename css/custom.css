@@ -12,9 +12,38 @@ header.sticky {
   top: 0;
   left: 0;
   right: 0;
+  animation-name: slideIn;
+  animation-duration: 2s;
 }
 header.sticky + * {
   margin-top: 60px;
+}
+@keyframes slideIn {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+header.not-sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  animation-name: slideOut;
+  animation-duration: 2s;
+}
+header.not-sticky + * {
+  margin-top: 60px;
+}
+@keyframes slideOut {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
 }
 
 main {
